@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="https://kit.fontawesome.com/15ecbdc434.js" crossorigin="anonymous"></script>
+    <style>
+        .form {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        .form h2 {
+            color: black;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .form input {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+
+        #sub {
+            border: none;
+            background-color: darkgray;
+            color: antiquewhite;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        #navi{
+            display: flex;
+            justify-content: space-between;
+        }
+        nav ul li{
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+        .flexi{
+            display: flex;
+        }
+        .f-flex{
+            display: flex;
+            justify-content: center;
+        }
+        #pr{
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul id="navi">
+                <div class="flexi">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Dashboard</a></li>
+                    <li id="pr"><a href=""></a>Details</li>
+                </div>
+                <div class="flexi">
+                    <li><a href=""></a><i class="fa-solid fa-arrow-right-from-bracket"></i></li>
+                    <li><a href=""></a><i class="fa-solid fa-user"></i></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section class="f-flex">
+        <form class="form">
+            <h2>Please Login</h2>
+            <input type="email" placeholder="Your Email"></input>
+            <input type="password" placeholder="Enter Password">
+            <input id="sub" type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+
+</html>
